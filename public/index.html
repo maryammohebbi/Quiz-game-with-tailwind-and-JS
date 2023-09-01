@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="./build/tailwind.css">
+</head>
+<body class="bg-slate-600">
+
+    <div class="w-screen h-screen flex flex-col items-center justify-center px-2">
+        <!-- start button -->
+        <button id="start-quiz" class="p-5 bg-green-300 rounded-lg">Start Quiz!</button>
+
+        <!-- quiz section -->
+        <section id="quiz-section" class="hidden container max-w-sm sm:max-w-md md:max-w-lg bg-slate-100 rounded-lg p-5 shadow-xl relative">
+            <!-- header -->
+            <div class="flex items-center justify-between p-2 border-b-slate-400">
+                <span id="number-of-count"></span>
+                <div class="flex justify-between p-2 rounded-xl w-20 bg-purple-200">
+                    <span id="time-left">10 s</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                       </svg>
+                    </span>
+                </div>
+            </div>
+            <!-- quiz body -->
+            <div id="quiz-container" class="container max-w-sm sm:max-w-md md:max-w-lg p-2 mb-5">
+                <!-- quwestion container -->
+                <!-- <div class="question-card w-full mb-10">
+                    <p id="quiz-text" class="mb-5 font-bold"></p>
+                    <div id="quiz-options" class="">
+                        <button class="block text-left mb-2 rounded-lg p-2 border border-slate-300 w-full bg-red-200">Sydney</button>
+                        <button class="block text-left mb-2 rounded-lg p-2 border border-slate-300 w-full bg-green-200">Canberra</button>
+                        <button class="block text-left mb-2 rounded-lg p-2 border border-slate-300 w-full">Melborn</button>
+                        <button class="block text-left mb-2 rounded-lg p-2 border border-slate-300 w-full">Brisbane</button>
+                    </div>
+                </div>  -->
+
+            </div>
+            <button id="next-btn" class="p-2 bg-blue-300 rounded-lg absolute right-2 bottom-2">Next >></button>             
+        </section>
+
+        <!-- score section -->
+        <section id="score-section" class="hidden container max-w-sm sm:max-w-md md:max-w-lg bg-slate-100 rounded-lg p-5 shadow-xl">
+            <div id="score" class="mb-8 text-center"></div>
+            <div class="flex items-center justify-between">
+                <button id="close-game" class="py-2 px-7 bg-slate-300 rounded-lg">Close</button>
+                <button id="play-again" class="p-2 bg-green-300 rounded-lg">Play Again</button>
+            </div>
+        </section>
+
+        <!-- bye bye section :)) -->
+        <section id="bye-section" class="hidden container max-w-sm sm:max-w-md md:max-w-lg bg-slate-100 rounded-lg p-5 shadow-xl">
+            <div class="text-center">Bye bye ^_^</div>
+        </section>
+    </div>
+    
+    <script src="../src/js/scripts.js"></script>
+</body>
+</html>
