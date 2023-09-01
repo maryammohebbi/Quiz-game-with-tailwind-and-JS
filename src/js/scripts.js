@@ -217,7 +217,7 @@ const timerDisplay = () => {
  function restartGame(){
     initial();
     scoreSection.classList.add("hidden");
-    startBtn.classList.remove("hidden");
+    showQuiz()
   }
 
 // bye section
